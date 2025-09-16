@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICE USDT — USDT ವೇದಿಕೆ | ಕೇವಲ USDT</title>
+  <meta name="description" content="ICE USDT ವೇದಿಕೆ. ಕೇವಲ USDT ನಲ್ಲಿ ವೇಗದ ಠೇವಣಿ ಮತ್ತು ಪಾವತಿಗಳು. ಸುರಕ್ಷಿತ, ಪಾರದರ್ಶಕ ಮತ್ತು ಯಾವಾಗಲೂ ಲಭ್ಯ.">
+  <link rel="icon" href="iceusdt.png" type="image/png">
+  <style>
+    :root{--bg:#0e1114;--bg-plate:#11161c;--card:#151a21;--muted:#9aa3ae;--accent:#f6c90e;--accent-2:#ffd84d;--danger:#ff4d4d;--text:#f3f6fb;--steel1:#0f1318;--steel2:#1a2027;--steel3:#222a33;--grad:linear-gradient(135deg,#14191f 0%,#1b222b 100%)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,"Helvetica Neue",sans-serif;background:radial-gradient(60% 60% at 100% 0%, rgba(246,201,14,.08), transparent 60%),radial-gradient(50% 50% at 0% 100%, rgba(60,70,84,.35), transparent 60%),repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 6px, rgba(0,0,0,.03) 6px 12px),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit}
+    .container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+    .hero{background:radial-gradient(120% 100% at 10% 0%, #0f1318 0%, transparent 60%),radial-gradient(120% 120% at 100% 0%, rgba(246,201,14,.06) 0%, transparent 60%),var(--grad);padding:72px 0 56px;position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(closest-side,rgba(255,255,255,.16),transparent 70%);pointer-events:none}
+    .brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+    .brand img{width:72px;height:72px;border-radius:12px;background:#ffffff22;backdrop-filter:blur(2px)}
+    .brand h1{font-size:1.75rem;margin:0;letter-spacing:.5px}
+    .badge-usdt{display:inline-flex;align-items:center;gap:8px;background:#1d1f23;color:#0b0d10;border:1px solid #303843;border-radius:999px;padding:6px 12px;font-weight:800;font-size:.9rem;background-image:linear-gradient(180deg,var(--accent) 0%,var(--accent-2) 100%);text-shadow:0 1px 0 rgba(255,255,255,.35)}
+    .hero h2{font-size:2.1rem;margin:10px 0 6px}
+    .hero p{margin:0;color:#eaf6ff;opacity:.9}
+    .cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .15s ease,box-shadow .25s ease,filter .25s ease;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+    .btn-primary{background:linear-gradient(135deg,#ffdf43 0%,#f6c90e 100%);color:#0b0d10;border:0;text-shadow:0 1px 0 rgba(255,255,255,.35)}
+    .btn-primary:hover{transform:translateY(-2px);filter:brightness(1.03);box-shadow:0 12px 28px rgba(246,201,14,.35)}
+    .btn-outline{background:#171c22;border:1px solid #343c46;color:#eaf1f9}
+    .btn-wa{background:#25d366;border:1px solid #128c7e;color:#0b0d10}
+    .btn-wa:hover{filter:brightness(1.03);box-shadow:0 10px 26px rgba(18,140,126,.35);transform:translateY(-2px)}
+    .btn-outline:hover{transform:translateY(-2px)}
+    section{padding:48px 0}
+    .card{background:linear-gradient(180deg,#171c22 0%,#12161c 100%);border:1px solid #242c36;border-radius:14px;padding:24px;transition:transform .2s ease,box-shadow .25s ease,border-color .25s ease;position:relative}
+    .card::before{content:"";position:absolute;inset:0;border-radius:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),inset 0 -1px 0 rgba(0,0,0,.4);pointer-events:none}
+    .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.02);border-color:#2e3743}
+    h3.section-title{color:var(--accent);margin:0 0 14px;font-size:1.35rem}
+    .grid{display:grid;gap:16px}
+    @media(min-width:720px){.grid-3{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}}
+    .list{list-style:none;padding:0;margin:0}
+    .list li{padding:12px 14px;background:#0e1116;border:1px solid #1e2430;border-radius:12px;margin-bottom:10px}
+    .networks{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid #3a424d;background:#14181e;color:var(--accent);font-weight:800;font-size:.85rem}
+    .note{color:var(--muted);font-size:.95rem}
+    .emph{color:var(--accent-2);font-weight:800}
+    .warn{color:var(--danger);font-weight:800}
+    /* Hero badges */
+    .badges{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid #2a333e;background:#14181e;color:#f0f3f7;font-weight:800;font-size:.9rem}
+    .pill i{font-style:normal;opacity:.9}
+    footer{text-align:center;padding:22px;background:#0a0d12;color:#8e99ab;font-size:.95rem;border-top:1px solid #1b2230}
+    .small{font-size:.85rem}
+    /* Language switch */
+    /* Language switch */
+    .lang-switch{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .lang-switch a{padding:6px 10px;border-radius:999px;border:1px solid #e6f8ff55;text-decoration:none;color:#fff;font-weight:600;font-size:.9rem}
+    .lang-switch a:hover{background:#001923;border-color:#0d5570}
+    /* Floating WhatsApp */
+    .floating-wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35);z-index:1000;font-size:26px;border:2px solid #128c7e}
+    .floating-wa:hover{transform:translateY(-2px)}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="brand">
+        <h1>ICEUSDT</h1>
+      </div>
+      <nav class="lang-switch">
+        <a href="index.HTML">English</a>
+        <a href="ice_hi.html">हिन्दी</a>
+        <a href="ice_kn.html">ಕನ್ನಡ</a>
+        <a href="ice_te.html">తెలుగు</a>
+      </nav>
+      <span class="badge-usdt">ಕೇವಲ USDT • ವೇಗದ ಪೇಔಟ್‌ಗಳು</span>
+      <h2>ತಕ್ಷಣದ ಸೆಟಲ್‌ಮೆಂಟ್‌ಗಳೊಂದಿಗೆ ಸುರಕ್ಷಿತ USDT ವೇದಿಕೆ</h2>
+      <p>ಬ್ಯಾಂಕ್ ಅವಲಂಬನೆ ಇಲ್ಲದೆ, 24/7 ಲಭ್ಯ ಠೇವಣಿ ಮತ್ತು ವಿತರಣಾ.</p>
+      <div class="badges">
+        <span class="pill"><i>🔐</i> ಬ್ಲಾಕ್‌ಚೈನ್ ಭದ್ರತೆ</span>
+        <span class="pill"><i>⚡</i> ತ್ವರಿತ ಪೇಔಟ್‌ಗಳು</span>
+        <span class="pill"><i>🌎</i> 24/7 ಪ್ರವೇಶ</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://iceusdt.com/clk?src=yCtcSrXGvr" target="_blank" rel="noopener">WhatsApp ನಲ್ಲಿ ನೋಂದಾಯಿಸಿ</a>
+        <a class="btn btn-wa" href="https://wa.me/447516010804" target="_blank" rel="noopener">WhatsApp ಈಗ</a>
+        <a class="btn btn-outline" href="#payment">ಪಾವತಿ ವಿವರಗಳನ್ನು ನೋಡಿ</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 class="section-title">ಏಕೆ ICE USDT</h3>
+          <ul class="list">
+            <li><strong>ಕೇವಲ USDT</strong> — ಬ್ಯಾಂಕ್ ಅವಲಂಬನೆ ಇಲ್ಲ, ಫ್ರೀಜ್ ಅಪಾಯ ಇಲ್ಲ.</li>
+            <li><strong>ಪಾರದರ್ಶಕ</strong> — ಬ್ಲಾಕ್‌ಚೈನ್ ಆಧಾರಿತ, ಪರಿಶೀಲಿಸಬಹುದಾದ ವಹಿವಾಟುಗಳು.</li>
+            <li><strong>ಯಾವಾಗಲೂ ಆನ್</strong> — 24/7 ಠೇವಣಿ ಮತ್ತು ಪೇಔಟ್‌ಗಳು.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="section-title">ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ</h3>
+          <ul class="list">
+            <li>1. WhatsApp ಮೂಲಕ ನಿಮ್ಮ ಖಾತೆ ರಚಿಸಿ.</li>
+            <li>2. ನೀಡಿದ ವಿಳಾಸಕ್ಕೆ USDT ಕಳುಹಿಸಿ.</li>
+            <li>3. ನಿಮ್ಮ ಬ್ಯಾಲೆನ್ಸ್ ಅನ್ನು ರಿಯಲ್-ಟೈಮ್‌ನಲ್ಲಿ ವೀಕ್ಷಿಸಿ.</li>
+            <li>4. USDT ಅನ್ನು ನಿಮ್ಮ ವಾಲೆಟ್‌ಗೆ ತಕ್ಷಣ ವಿತರಿಸಿಕೊಳ್ಳಿ.</li>
+          </ul>
+        </div>
+        <div class="card" id="payment">
+          <h3 class="section-title">ಪಾವತಿ ವಿವರಗಳು</h3>
+          <p class="note"><span class="emph">ಕೇವಲ USDT ಸ್ವೀಕರಿಸಲಾಗುತ್ತದೆ.</span> INR ಅಥವಾ ಇತರ ಫಿಯಾಟ್ ಪಾವತಿಗಳು ಸ್ವೀಕೃತವಲ್ಲ.</p>
+          <div class="networks">
+            <span class="chip">TRC20</span>
+          </div>
+          <ul class="list" style="margin-top:12px;">
+            <li>ಕನಿಷ್ಠ ಠೇವಣಿ: 10 USDT</li>
+            <li>ಕನಿಷ್ಠ ವಿತರಣಾ: 50 USDT</li>
+            <li>ಪ್ರಕ್ರಿಯೆ ಸಮಯ: ತಕ್ಷಣದಿಂದ 10 ನಿಮಿಷಗಳವರೆಗೆ</li>
+          </ul>
+          <div class="cta" style="margin-top:14px;">
+            <a class="btn btn-primary" href="https://wa.me/447516010804" target="_blank" rel="noopener">ಠೇವಣಿ ವಿಳಾಸ ಪಡೆಯಿರಿ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <h3 class="section-title">ಪದೇ ಪದೇ ಕೇಳುವ ಪ್ರಶ್ನೆಗಳು</h3>
+        <div class="grid grid-2">
+          <div class="card" style="background:#0e1116;">
+            <p><strong>ನೀವು INR ಸ್ವೀಕರಿಸುತ್ತೀರಾ?</strong><br><span class="warn">ಇಲ್ಲ. ಪಾವತಿಗಳು USDT ಯಲ್ಲಿ ಮಾತ್ರ.</span></p>
+          </div>
+          <div class="card" style="background:#0e1116;">
+            <p><strong>ಯಾವ ನೆಟ್ವರ್ಕ್ ಬೆಂಬಲಿತ?</strong><br>TRC20 ಮಾತ್ರ. ಬೆಂಬಲ ತಂಡ ಹಂಚಿದ ನೆಟ್ವರ್ಕ್/ವಿಳಾಸವನ್ನೇ ಬಳಸಿ.</p>
+          </div>
+          <div class="card" style="background:#0e1116;">
+            <p><strong>ವಿತರಣಾ ಎಷ್ಟು ವೇಗವಾಗಿ?</strong><br>ಸಾಮಾನ್ಯವಾಗಿ ತಕ್ಷಣದಿಂದ 10 ನಿಮಿಷಗಳವರೆಗೆ. ನೆಟ್ವರ್ಕ್ ಸಂಚಾರದ ಮೇಲೆ ಅವಲಂಬಿತ.</p>
+          </div>
+          <div class="card" style="background:#0e1116;">
+            <p><strong>ಹೇಗೆ ಪ್ರಾರಂಭಿಸಲಿ?</strong><br>"WhatsApp ನಲ್ಲಿ ನೋಂದಾಯಿಸಿ" ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ; ನಮ್ಮ ತಂಡ ನಿಮ್ಮನ್ನು ಆನ್‌ಬೋರ್ಡ್ ಮಾಡುತ್ತದೆ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <h3 class="section-title">ಅನುಸರಣೆ ಮತ್ತು ಜವಾಬ್ದಾರಿ ಉಪಯೋಗ</h3>
+        <p class="small note">ICE USDT ಅನ್ನು ಬಳಸುವ ಮೂಲಕ, ನೀವು 18+ ವಯಸ್ಸಿನವರು ಹಾಗೂ ನಿಮ್ಮ ಪ್ರಾಧಿಕಾರದಲ್ಲಿ ಬಳಕೆ ಅನುಮತಿತವಾಗಿದೆ ಎಂದು ದೃಢಪಡಿಸುತ್ತೀರಿ. ಜವಾಬ್ದಾರಿಯಾಗಿ ಬಳಸಿ. ಮಿತಿಗಳನ್ನು ಹೊಂದಿಸಿ ಮತ್ತು ಅನಾವಶ್ಯಕ ಹಣಕಾಸು ಅಪಾಯಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಡಿ.</p>
+        <p class="small note">ICE USDT ಒಂದು ವೇದಿಕೆ — USDT ಆಧಾರಿತ ಖಾತೆ ಬ್ಯಾಲೆನ್ಸ್‌ಗಳಿಗಾಗಿ. ನಾವು ಬ್ಯಾಂಕ್ ವರ್ಗಾವಣೆಗಳು ಅಥವಾ ಯಾವುದೇ ಫಿಯಾಟ್ ಪಾವತಿಗಳನ್ನು ಸ್ವೀಕರಿಸುವುದಿಲ್ಲ. ಎಲ್ಲಾ ಸೆಟಲ್‌ಮೆಂಟ್‌ಗಳು ಆನ್-ಚೈನ್.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 ICE USDT. ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</div>
+  </footer>
+  <a class="floating-wa" href="https://wa.me/447516010804" target="_blank" rel="noopener" aria-label="WhatsApp ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ">💬</a>
+</body>
+</html>
