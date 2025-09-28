@@ -1,167 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICE USDT - Fastest USDT-only iGaming Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Background</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Background clickable image */
+    .bg-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("background.png") no-repeat center center/cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <span class="logo-text">ICE USDT</span>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#features" class="nav-link">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    ICE USDT — Fastest USDT-only 
-                    <span class="highlight">iGaming Platform</span>
-                </h1>
-                <p class="hero-subtitle">
-                    10s deposits. No bank freeze risk. Withdraw instantly.
-                </p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/+447516010804" class="cta-btn whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </a>
-                    </a>
-                <button class="cta-btn register-btn" onclick="window.location.href='https://iceusdt.com/clk?src=yCtcSrXGvr'">
-  <i class="fas fa-user-plus"></i>
-  Register Now
-</button>
-
-                </div>
-            </div>
-            <div class="hero-animation">
-                <div class="usdt-coin coin-1">
-                    <i class="fab fa-ethereum"></i>
-                </div>
-                <div class="usdt-coin coin-2">
-                    <i class="fab fa-ethereum"></i>
-                </div>
-                <div class="usdt-coin coin-3">
-                    <i class="fab fa-ethereum"></i>
-                </div>
-                <div class="usdt-coin coin-4">
-                    <i class="fab fa-ethereum"></i>
-                </div>
-                <div class="usdt-coin coin-5">
-                    <i class="fab fa-ethereum"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Why Choose ICE USDT?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-percentage"></i>
-                    </div>
-                    <h3 class="feature-title">10% Bonus on every deposit</h3>
-                    <p class="feature-description">
-                       On every deposit
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="feature-title">Safest Panels</h3>
-                    <p class="feature-description">
-                        Military-grade security for your gaming experience
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3 class="feature-title">Instant Entry to Market</h3>
-                    <p class="feature-description">
-                        Start gaming within seconds of registration
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get Started Today</h2>
-            <p class="contact-subtitle">Join thousands of satisfied gamers on ICE USDT</p>
-            <div class="contact-buttons">
-                <a href="https://wa.me/+447516010804" class="contact-btn whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    Contact on WhatsApp
-                </a>
-                <button class="contact-btn register" onclick="openRegistrationForm()">
-                    <i class="fas fa-user-plus"></i>
-                    Register Now
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">ICE USDT</span>
-                </div>
-                <div class="social-links">
-                    <a href="https://wa.me/+447516010804" class="social-link" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 ICE USDT. All rights reserved.</p>
-            </div>
-        </div>
-      </footer>
-
-    <!-- Register Now button (correctly placed after footer) -->
-    <button class="cta-btn register-btn" onclick="window.location.href='https://iceusdt.com/clk?src=yCtcSrXGvr'">
-      <i class="fas fa-user-plus"></i>
-      Register Now
-    </button>
-
-    </form>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <!-- Pure background image clickable -->
+  <a href="https://wa.me/+447516010804" target="_blank" class="bg-link"></a>
 </body>
 </html>
