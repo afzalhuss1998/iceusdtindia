@@ -3,28 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clickable Background WhatsApp</title>
+  <title>WhatsApp Chat Link</title>
   <style>
-    html, body {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+      background: #fff;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-
-    /* Clickable background */
-    .bg-link {
+    header {
+      text-align: center;
+      padding: 30px 15px 10px;
+      font-size: 22px;
+      color: #25D366;
+      font-weight: bold;
+    }
+    .container {
+      text-align: center;
+      flex: 1;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 20px auto;
+      object-fit: cover;
+      border: 2px solid #ddd;
+    }
+    h2 {
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #25D366;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .msg {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+    footer {
+      background: #111827;
+      color: #94a3b8;
+      font-size: 14px;
+      padding: 30px 20px;
+    }
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+    .footer-col h4 {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #ccc;
+      font-weight: bold;
+    }
+    .footer-col a {
       display: block;
-      width: 100%;
-      height: 100%;
-      background: url("background.png") no-repeat center center;
-      background-size: cover;
+      margin: 6px 0;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .footer-col a:hover {
+      color: #25D366;
+    }
+    .social {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .social a {
+      margin: 0 8px;
+      font-size: 20px;
+      color: #94a3b8;
       text-decoration: none;
     }
+    .social a:hover {
+      color: #25D366;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 12px;
+      color: #777;
+    }
   </style>
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Pure page background clickable -->
-  <a href="https://wa.me/+447516010804" target="_blank" class="bg-link"></a>
+  <header>
+    <span>WhatsApp</span>
+  </header>
+
+  <div class="container">
+    <img src="your-logo.png" alt="Logo" class="logo">
+    <h2>ICEUSDT</h2>
+    <a href="https://wa.link/3e7r50" class="btn">Continue to Chat</a>
+    <div class="msg">Hello, I want new ID</div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>What we do</h4>
+        <a href="#">Features</a>
+        <a href="#">Blog</a>
+        <a href="#">Security</a>
+        <a href="#">For Business</a>
+      </div>
+      <div class="footer-col">
+        <h4>Who we are</h4>
+        <a href="#">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Brand Center</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Use WhatsApp</h4>
+        <a href="#">Android</a>
+        <a href="#">iPhone</a>
+        <a href="#">Mac/PC</a>
+        <a href="#">WhatsApp Web</a>
+      </div>
+      <div class="footer-col">
+        <h4>Need help?</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Help Center</a>
+        <a href="#">Apps</a>
+        <a href="#">Security Advisories</a>
+      </div>
+    </div>
+
+    <div class="social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+    </div>
+
+    <div class="copyright">
+      © 2025 YourSite
+    </div>
+  </footer>
 </body>
 </html>
